@@ -176,3 +176,31 @@ useEffect(() => {
   console.log ("This is going to run initially + everytime when anything changes");
 });
 ```
+
+## Let's build our mega app!
+
+1..2..3.. Let's jump on to VS Code!
+
+## Deploy
+
+1. Create github repo
+2. `npm install gh-pages --save-dev`
+3. Add homepage in package.json - `"homepage": "http://madhavbahlmd.github.io/sample-react-app"`
+4. Add deploy scripts (shown below)
+5. `git add .`
+6. `git commit -m "Your commit message"`
+7. `git push -u origin master`
+8. `npm run deploy`
+
+**Deploy script**
+
+```
+{
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+}
+```
+
+***
+
+That's it! Hope you enjoyed the session.
